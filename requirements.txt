@@ -75,8 +75,6 @@ pyarrow==8.0.0
 pycodestyle==2.8.0	
 pycparser==2.21	
 pyparsing==3.0.9	
-pypiwin32==223
-pywin32==301
 pyrsistent==0.18.1	
 python-dateutil==2.8.2
 pyttsx3==2.90
