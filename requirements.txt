@@ -64,7 +64,7 @@ pandocfilters==1.5.0
 parso==0.8.3	
 pickleshare==0.7.5	
 pip==22.1.2	
-pipreq==0.4.11	
+pipreqs==0.4.11	
 platformdirs==2.5.2	
 prometheus-client==0.14.1	
 prompt-toolkit==3.0.29	
