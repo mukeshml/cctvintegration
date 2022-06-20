@@ -1,0 +1,132 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+   <meta name="description"
+         content="A automated CCTV monitoring system which uses AI/ML models for detecting suspect in CCTV footage and also getting the heatmap, detecting name plates and many more "/>
+
+   <!--Inter UI font-->
+   <link href="https://rsms.me/inter/inter-ui.css" rel="stylesheet">
+
+   <!--vendors styles-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+   <!-- Bootstrap CSS / Color Scheme -->
+   <link rel="stylesheet" href="css/default.css" id="theme-color">
+   <link rel= "stylesheet" href= 'css/main.css'>
+
+   <!-- Manual CSS -->
+   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/default.css') }}">
+   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/form.css') }}">
+   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/_custom.scss') }}">
+   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/_variable.scss') }}">
+</head>
+
+
+   <script src="https://unpkg.com/feather-icons"></script>
+   <script src="{{url_for('static', filename='js/main.js')}}"></script>
+   <script src="{{url_for('static', filename='js/scripts.js')}}"></script>
+    <title>Live Streaming Demonstration</title>
+</head>
+<body>
+  
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="{{url_for('static', filename='js/main.js')}}"></script>
+  <script src="{{url_for('static', filename='js/scripts.js')}}"></script>
+   <title>Live Streaming Demonstration</title>
+  <!--navigation-->
+<section class="smart-scroll">
+  <div class="container-fluid">
+      <nav class="navbar navbar-expand-md navbar-dark">
+          <a class="navbar-brand heading-black" >
+              CCTV
+          </a>
+          <button class="navbar-toggler navbar-toggler-right " type="button" data-toggle="collapse"
+                  data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span><i class="fa fa-navicon"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a class="nav-link page-scroll" href="#">Update Database</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#">Suspects Caught</a>
+                </li>
+                
+                  <li class="nav-item">
+                      <a class="nav-link page-scroll" href="#">Log out</a>
+                  </li> 
+                 
+              </ul>
+          </div>
+      </nav>
+  </div>
+</section>
+
+<!--hero header-->
+<section class="py-7 py-md-0 bg-hero" id="home">
+
+  <!-- <div class="container" >
+    <div class="row vh-md-100">
+            <div class="container">
+              <div class="row">
+                  <div class="col-md-8 col-sm-10 text-center " >
+                      <h3 class="mb-12">Welcome {{name}} </h3>
+                      <img src="{{ url_for('video_feed') }}" width="90%" height="70%">
+                  </div>
+                 
+              </div>
+          </div>
+       
+    </div>
+</div> -->
+
+  <!-- <div class="row vh-md-100"> -->
+          <!-- <div class="container" >
+           
+                <div class="col-md-8 col-sm-10 text-center " >
+                    <h3 class="mb-12">Welcome {{name}} </h3>
+                    <img src="{{ url_for('video_feed') }}" width="90%" height="70%">
+
+                   
+                  
+      </div> 
+   </div> -->
+  
+</section>
+<div class="row mt-6">
+  <div class="col-md-9 " >
+    <h3 class="mb-12">Welcome {{name}} </h3>
+    <img src="{{ url_for('video_feed') }}" width="80%" height="60%" >
+      <a href="#" class="btn btn-danger">
+          Suspect Detected
+      </a>
+  </div>
+  <div class="col-md-3">
+      <div class="slick-about">
+        <img src="{{ url_for('static', filename='Image/TomH.jpg') }}" class="img-fluid rounded d-block mx-auto" width="50%" height="20%" >
+         
+          <!-- <img src="Image\Tom.jpg" class="img-fluid rounded d-block mx-auto" alt="Work 2"/>
+          <img src="project\Image\Tom.jpg" class="img-fluid rounded d-block mx-auto" alt="Work 3"/> -->
+      </div>
+  </div>
+</div>
+
+
+</body>
+</html>
+
