@@ -26,7 +26,6 @@ cycler==0.11.0
 dataclasses==0.6	
 debugpy==1.6.0	
 decorator==5.1.1	
-defusedxm==l0.7.1	
 distlib==0.3.4
 dlib==19.18.0	
 docopt==0.6.2
@@ -123,3 +122,8 @@ wheel==0.37.1
 yarg==0.1.9	
 yarl==1.7.2	
 zipp==3.8.0
+gunicorn==20.0.4
+Werkzeug==0.16.0
+Jinja2==2.10.1
+itsdangerous==1.1.0
+MarkupSafe==1.1.1
