@@ -70,7 +70,6 @@ prometheus-client==0.14.1
 prompt-toolkit==3.0.29	
 protobuf==3.20.1	
 psutil==5.9.0	
-pure-eva==l0.2.2	
 py-mailsender==1.0	
 pyScss==1.4.0	
 pyarrow==8.0.0	
